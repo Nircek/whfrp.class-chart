@@ -1,0 +1,137 @@
+html,
+body,
+.hstretch {
+  height: 100vh;
+}
+.sidebar {
+  background: #EEE;
+  border-left: 1px solid #888;
+  border-right: 1px solid #888;
+  height: 100vh;
+  overflow: hidden;
+}
+.nopadding {
+  padding: 0;
+}
+#searchform .form-group {
+  margin-bottom: 0;
+}
+#classlist {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100%;
+}
+#classlist ul {
+  list-style-type: none;
+  padding: 0;
+}
+#classlist ul li {
+  padding: 5px;
+  border-bottom: 1px solid #888;
+}
+#classlist ul li:first-child {
+  border-top: 1px solid #888;
+}
+#classlist ul li.active,
+#classlist ul li:hover {
+  background-color: #AAA;
+}
+#classlist .label-basic {
+  padding: 5px;
+  margin-left: 5px;
+  background-color: #29a329;
+}
+#classlist .label-advanced {
+  padding: 5px;
+  margin-left: 5px;
+  background-color: #c3c322;
+}
+#classlist .label-special {
+  padding: 5px;
+  margin-left: 5px;
+  background-color: #ad2bee;
+}
+#classlist .label-condition {
+  padding: 5px;
+  margin-left: 5px;
+  background-color: #3d62f5;
+}
+#classinfo {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+#classinfo #quote {
+  font-style: italic;
+}
+#classinfo #profiles {
+  table-layout: fixed;
+}
+#classinfo #profiles tr > td {
+  text-align: center;
+}
+#classinfo #profiles tr.header > td {
+  background: #333;
+  color: #EEE;
+  font-weight: bold;
+}
+#classinfo #profiles tr.sub-header > td {
+  background: #777;
+  color: #EEE;
+  font-weight: bold;
+}
+#classinfo ul#entries,
+#classinfo ul#exits {
+  list-style-type: none;
+  padding: 0px;
+}
+#classinfo ul#entries li,
+#classinfo ul#exits li {
+  display: inline;
+  padding-right: 0.5em;
+}
+#classwheel {
+  max-height: 100vh;
+  display: block;
+  margin: 0 auto;
+  padding: 5px;
+}
+#classwheel .node {
+  font-size: 0.7em;
+  fill: #bbb;
+}
+#classwheel .node:hover {
+  font-size: 0.75em;
+  fill: #000;
+}
+#classwheel .node.active {
+  font-size: 0.75em;
+  fill: #000;
+}
+#classwheel .node.entrie {
+  font-size: 0.75em;
+  fill: #B00;
+}
+#classwheel .node.exit {
+  font-size: 0.75em;
+  fill: #0B0;
+}
+#classwheel .link {
+  fill: none;
+  pointer-events: none;
+  stroke: #999;
+  stroke-opacity: 0.1;
+}
+#classwheel .link.entrie {
+  stroke: #B00;
+  stroke-opacity: 1;
+}
+#classwheel .link.exit {
+  stroke: #0B0;
+  stroke-opacity: 1;
+}
+#classwheel .link.entrie.exit {
+  stroke: #00B;
+}
+.hidden {
+  display: none;
+}
